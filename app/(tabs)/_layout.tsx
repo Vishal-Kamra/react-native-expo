@@ -1,23 +1,28 @@
 import { Tabs } from "expo-router";
 import { Image, Text, View } from "react-native";
 import { icons } from "../../constants";
+import { styled } from "nativewind";
+
+const StyledView = styled(View);
+const StyledText = styled(Text);
+const StyledImage = styled(Image);
 
 const TabIcon = ({ color, name, focused, icon }: any) => {
   return (
-    <View className="justify-center gap-2 items-center">
-      <Image
+    <StyledView className="justify-center gap-2 items-center">
+      <StyledImage
         source={icon}
         resizeMode="contain"
         className="w-6 h-6"
         tintColor={color}
       />
-      <Text
+      <StyledText
         className={`${focused ? "font-psemibold" : "font-pregular"} text-xs`}
         style={{ color: color }}
       >
         {name}
-      </Text>
-    </View>
+      </StyledText>
+    </StyledView>
   );
 };
 

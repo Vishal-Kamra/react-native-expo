@@ -1,9 +1,13 @@
+import { styled } from "nativewind";
 import { Text, View } from "react-native";
+
+const StyledView = styled(View);
+const StyledText = styled(Text);
 
 export default function Profile() {
   return (
-    <View className="flex-1 items-center justify-center">
-      <Text className="text-3xl font-pblack">Profile Page</Text>
-    </View>
+    <StyledView className="flex-1 items-center justify-center">
+      <StyledText className="text-3xl font-pblack">Profile Page</StyledText>
+    </StyledView>
   );
 }

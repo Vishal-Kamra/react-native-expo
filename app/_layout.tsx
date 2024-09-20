@@ -1,6 +1,5 @@
 import React, { useEffect } from "react";
-import { Slot, SplashScreen, Stack } from "expo-router";
-import { Text } from "react-native";
+import { SplashScreen, Stack } from "expo-router";
 import { useFonts } from "expo-font";
 
 SplashScreen.preventAutoHideAsync();
